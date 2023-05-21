@@ -63,7 +63,7 @@ async function searchImages() {
     totalPages = numberPages(result.totalHits);
     showImages(result.hits);
   } catch (error) {
-    console.log(error);
+    showAlert(error);
   }
 }
 
